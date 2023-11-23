@@ -1,0 +1,11 @@
+libdir=/home/javds/Desktop/betterDedupe/tools/openssl-master
+includedir=/home/javds/Desktop/betterDedupe/tools/openssl-master/include
+enginesdir=/home/javds/Desktop/betterDedupe/tools/openssl-master/engines
+modulesdir=/home/javds/Desktop/betterDedupe/tools/openssl-master/providers
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 3.3.0-dev
+Libs: -L${libdir} -lcrypto
+Libs.private: -ldl -pthread
+Cflags: -I${includedir}
